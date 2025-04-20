@@ -81,12 +81,10 @@ a {
     transition: 0.5s;
 }
 
-.colocar {
+.colocar_X {
     background-image: url('tercera.jpg');
     background-color: #1e1e1e;
     background-repeat: no-repeat;
-    background-size: 30px 30px;
-    background-position: center;
     height: 30px;
     width: 30px;
 }
