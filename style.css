@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('../IMG/campeero.jpg');
+    background-image: url('campeero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,7 +20,7 @@ body {
 }
 
 .boton_menu {
-    background-image: url('../IMG/hamburguesa-removebg-preview.png');
+    background-image: url('hamburguesa-removebg-preview.png');
     background-color:#1e1e1e;
     background-repeat: no-repeat;
     background-size: 30px 30px;
@@ -82,7 +82,7 @@ a {
 }
 
 .colocar {
-    background-image: url('../IMG/tercera.jpg');
+    background-image: url('tercera.jpg');
     background-color: #1e1e1e;
     background-repeat: no-repeat;
     background-size: 30px 30px;
