@@ -95,7 +95,7 @@ nav ul li:hover {
 
     /* con esta clase cambio las barras por una x */
     .colocar_x {
-        background-image: url('tercera.jpg');
+        background-image: url('x.png');
         background-color: #2E4172;
         background-repeat: no-repeat;
         height: 30px;
