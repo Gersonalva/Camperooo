@@ -12,35 +12,13 @@ body {
     height: 100vh;
 }
 
-
-
+/* computadora */
 .barras {
     display: none;
-    background-color: #1e1e1e;
 }
 
-.boton_menu {
-    background-image: url('hamburguesa-removebg-preview.png');
-    background-color:#1e1e1e;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    background-position: center;
-    height: 30px;
-    width: 30px;
-}
-
-button {
-    margin: 10px 10px 10px 20px;
-    border: none;
-}
-
-
-
-.desplegables {
-    background: greenyellow; 
-    font-size: 1.5rem;
-    width: 100%;
-    transition: 0.5s;
+.desplegable {
+    background: #2E4172;
 }
 
 ul {
@@ -54,58 +32,84 @@ ul li {
 }
 
 ul li a {
-    color: black; 
+    color: cyan;
     text-decoration: none;
     text-align: center;
     font-size: 1.1rem;
 }
 
 nav ul li:hover {
-    background: red;
+    background: #8192B7;
 }
 
-
-a {
-    padding: 20px 0px 20px 20px;
-    font-size: 1.5rem;
-    text-align: left;
-}
-
-
-
-.abrir_menu {
-    background: rgba(30, 30, 30, 0.6);
-    backdrop-filter: blur(2px);
-    transform: translate(0%);
-    width: 50%;
-    transition: 0.5s;
-}
-
-.colocar_x {
-    background-image: url('tercera.jpg');
-    background-color: #1e1e1e;
-    background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
-}
-
-
-
+/* tablet */
 @media (max-width: 850px) {
     .barras {
+        background-color: #2E4172;
         display: block;
     }
 
-    .desplegables {
-        background: rgba(255, 165, 0, 0.9); 
+    .desplegable {
+        background: none;
         transform: translate(-100%);
-        width: 100%;
-        height: 100vh;
-        font-size: 1.6rem;
+        transition: 0.5s;
+        font-size: 1.5rem;
+        width: 50%;
     }
 
     ul {
-        flex-direction: column; 
+        flex-direction: column;
         height: 100vh;
+    }
+
+    a {
+        font-size: 1.5rem;
+        padding: 20px 0 20px 20px;
+        display: block;
+        text-align: left;
+    }
+
+    .boton_menu {
+        background-image: url('hamburguesa-removebg-preview.png');
+        background-color: #2E4172;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        background-position: center;
+    }
+
+    button {
+        margin: 10px 10px 10px 20px;
+        border: none;
+    }
+
+    /* con esta clase cierro y abro el menú con toggle */
+    .abrir_menu {
+        background: rgba(30, 30, 30, 0.6);
+        backdrop-filter: blur(2px);
+        transform: translate(0%);
+        width: 50%;
+        transition: 0.5s;
+    }
+
+    /* con esta clase cambio las barras por una x */
+    .colocar_x {
+        background-image: url('tercera.jpg');
+        background-color: #2E4172;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 30px;
+        background-size: 30px 30px;
+        background-position: center;
+    }
+}
+
+/* móvil */
+@media (max-width: 500px) {
+    .desplegable {
+        width: 100%;
+        height: 100vh;
+        font-size: 1.6rem;
     }
 }
